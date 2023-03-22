@@ -5,3 +5,26 @@
 }
 
 /*Desktop css*/
+body {
+    background-position: top -100px right -150px; 
+    background-repeat: no-repeat;
+    background-size: 992px 934px;
+}
+
+header {
+    padding: 20px 150px;
+}
+
+.header-button {
+    padding-right: 150px;
+}
+
+.section-1 {
+    padding:  0px 165px;
+    margin-top: 150px;
+}
+
+.content, h1, p {
+    display: flex;
+    flex-basis: 30%;
+}
