@@ -13,8 +13,8 @@
 body {
     font-family: var(--font-family);
     overflow-x: hidden;
-    width: 1440px;
-    height: 1845px;
+    /* width: 1440px; */
+    /* height: 1845px; */
 }
 
 a {
@@ -119,7 +119,7 @@ header {
     gap: 45px;
 }
 
-.main-image-desktop{
+.main-image-desktop {
     margin-top: -250px;
     margin-right: -470px;
     z-index: 1;
@@ -137,11 +137,9 @@ header {
     margin: auto ;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* background-color: green; */
     margin-left: 165px;
     margin-bottom: 140px;
 }
-
 
 #courses-text {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -214,6 +212,12 @@ header {
     font-weight: 700;
     line-height: 28px;
     margin-left: 32px;
+
+}
+
+.GS:hover {
+    color: #FFA7C3;
+    cursor: pointer;
 }
 
 .footer {
@@ -252,26 +256,33 @@ header {
     margin-right: -130px;
 }
 
+.footer-button:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
 /* .footer-heading {
     width: 111.17px;
     height: 27.68px;
 } */
 
 /* mobile screen  */
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+ @media only screen and (min-width: 320px) and (max-width: 767px) { 
     .header {
         display: flex;
         justify-content: center;
         /* background-color: red; */
         margin: auto;
-        width: 375px;
+        width: 320px;
         gap: 100px;
         margin: 16px 16px 0 0;
     }
 
     body {
-        width: 375px;
-        height: 1695px;
+        width: 320px;
+       height: 1695px;
+       margin: auto;
     }
 
     .img {
@@ -286,7 +297,6 @@ header {
         flex-direction: column;
         margin: 30px auto 0 auto; 
         width: 375px;
-        /* background-color: blue; */
     }
     
     .header-button {
@@ -299,7 +309,6 @@ header {
         font-size: 18px;
         font-family: var(--font-family);
     }
-    
     
     .content{
         width: 343px;
@@ -501,150 +510,51 @@ header {
         margin-bottom: auto;
     }
 }
+/* Tablet screen */
+   @media only screen and (min-width: 768px) {
+        /* body {
+            width: 768px;
+           height: 1760px;
+        } 
 
-/* Tablet screen  */
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .header {
-        display: flex;
-        justify-content: center;
-        background-color: red;
-        margin: auto;
-        width: 698px;
-        height: 48px;
-        gap: 400px;
-        margin: 24px 40px 0 40px;
-    }
-
-    body {
-        width: 768px;
-        height: 1760px;
-    }
-
-    .main-image-desktop {
-        display: none;
-    }
-
-    .main-image-tablet {
-        margin-top: -150px;
-        margin-right: -100px;
-        background-color: black;
-    }
-
-    /* .tablet-image{
-        width: 327px;
-        height: 301px;
-        margin: auto;
-        margin: 46px 24px 54px 24px;
-    } */
-
-    .img {
-        height: 28px;
-        width: 89px;
-        /* background-color: aqua; */
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    
-    .header-button {
-        background-color: #13183F;
-        color: #FFFFFF;
-        border-radius: 28px;
-        border: none;
-        height: 48px;
-        width: 140px;
-        font-size: 18px;
-    }
-    
-    section-1 {
-        display: flex;
-        justify-content: center;
-        background-color: blue;
-        margin-left: 16px;
-        width: 398px;
-        height: 284px;
-        margin-top: 99px;
-        /* gap: 45px; */
-    }
-
-    .content h1 {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 50px;
-        color: #13183F;
-        width: 326px;
-        height: 101px;
-        margin-bottom: 24px;
-    }
-    
-    .p {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #83869A;
-        width: 390px;
-        height: 75px;
-        /* margin-bottom: 25px; */
-    }
-    
-    .content-button {
-        color: #FFFFFF;
-        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-        border-radius: 32px;
-        height: 56px;
-        width: 167px;
-        border: none;
-        font-size: 18px;
-        line-height: 28px;
-        margin: 20px 0 0 40px;
-    }
-
-    .courses {
-        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-        width: 768px;
-        height: 999px;
-        margin: auto;
-    }
-
-    .courses-container  {
-        width: 689px;
-        margin: 0 40px 0 40px;
-        height: 913px;
-        display: grid;
-        grid-template-columns: 2fr;
-        background-color: green;
-        /* gap: 40px; */
-    }
-
-    #courses-text {
-        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-        height: 259px;
-        width: 339px;
-        color: #FFFFFF;
-        font-size: 32px;
-        margin: 24px 0 32px 40px;
-        }
-    
-        .courses-text{
-        font-family: var(--font-family);
-        font-size: 24px;
-        margin: 24px auto 14px auto;
-        width: 286px;
-        height: 82px;
-        line-height: 32px;
-        font-weight: 800;
+        .courses-container  {
+            width: 100%;
+            height: 748px;
+            margin: auto ;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 165px;
+            margin-bottom: 140px;
         }
 
-    .course-item {
-        background-color: white;
-        height: 283px;
-        width: 343px;
-        color: #83869A;
-        border-radius: 15px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 28px;
-        margin: 16px 16px 16px 16px;
-    }
+        .header {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+            margin: auto;
+            width: auto;
+            height: 48px;
+            gap: 400px;
+        }
 
+        header {
+            margin-top: 24px;
+        }
 
-}
+        .main-image-desktop {
+            display: none;
+        }
+    
+        .main-image-tablet {
+            margin-top: -92px;
+            margin-left: 420px;
+            background-color: black;
+        }
+
+        .tablet-image {
+            height: 640px;
+            width: 640px;
+        } */
+
+   } 
+ 
