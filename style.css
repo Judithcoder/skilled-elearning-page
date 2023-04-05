@@ -272,7 +272,7 @@ header {
     .header {
         display: flex;
         justify-content: center;
-        background-color: red;
+        /* background-color: red; */
         margin: auto;
         width: 375px;
         gap: 90px;
