@@ -54,10 +54,10 @@ header {
     color: #FFFFFF;
     border-radius: 28px;
     border: none;
-    height: 56px;
+    height: 50px;
     width: 167px;
     font-size: 18px;
-    margin-right: 100px;
+    margin-right: 57px;
     font-family: var(--font-family);
     z-index: 5;
 }
@@ -272,11 +272,11 @@ header {
     .header {
         display: flex;
         justify-content: center;
-        /* background-color: red; */
+        background-color: red;
         margin: auto;
         width: 375px;
-        gap: 100px;
-        margin: 16px 16px 0 0;
+        gap: 90px;
+        /* margin: 16px 16px 0 0; */
     }
 
     body {
@@ -288,14 +288,14 @@ header {
     .img {
         height: 25px;
         width: 89px;
-        /* margin-left: 10px; */
+        margin-left: 10px;
     }
 
     .section-1 {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 30px auto 0 auto; 
+        margin: -105px 0 auto -20px; 
         width: 375px;
     }
     
@@ -306,15 +306,14 @@ header {
         border: none;
         height: 48px;
         width: 140px;
-        font-size: 18px;
-        font-family: var(--font-family);
+        font-size: 15px;
     }
     
     .content{
         width: 343px;
-        margin: 16px;
-        /* display: flex; */
-        /* flex-direction: column; */
+        /* margin: 16px; */
+        display: flex;
+        flex-direction: column;
     }
     
     .content h1 {
@@ -360,7 +359,7 @@ header {
         width: 327px;
         height: 301px;
         margin: auto;
-        margin: 46px 24px 54px 24px;
+        /* margin: 46px 24px 54px 24px; */
     }
     
     .main-image-desktop {
@@ -466,16 +465,6 @@ header {
         margin-left: 32px;
     } 
 
-    #GS {
-        color:  #F74780;;
-        height: 28px;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 28px;
-        margin-left: 32px;
-        /* margin-top: 28px; */
-    }
-
     .footer {
     display: flex;
     justify-content: center;
@@ -514,7 +503,7 @@ header {
    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         
         header {
-            margin-top: 24px;
+            /* margin-top: 24px; */
         }
         
         body {
@@ -523,7 +512,7 @@ header {
         }
         .header {
             width: 100%;
-            /* background-color: blue; */
+            background-color: blue;
             height: 48px;
             margin: auto;
         }
@@ -533,10 +522,7 @@ header {
         }
         
         .main-image-tablet {
-            display: block;
-            /* margin-top: -150px;
-            margin-right: -870px; */
-            /* z-index: 1; */
+            /* display: block; */
         }
 
         .main-image-desktop {
@@ -600,17 +586,17 @@ header {
         .section-1 {
             display: flex;
             justify-content: space-between;
-            /* background-color: red; */
+            background-color: red;
             margin: auto;
             width: auto;
             gap: 0px;
         }
 
         .tablet-image {
-            width: 940px;
-            height: 640px;
-            margin-top: -150px;
-            margin-right: -170px; 
+            /* width: 940px;
+            height: 640px; */
+            margin-top: -50px;
+            margin-right: 370px; 
         }
         
         .courses {
